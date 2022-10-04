@@ -1,12 +1,15 @@
 import express from 'express';
+import bodyParser from 'body-parser';
+import { initServer } from './serverInit';
+import { userRouter } from './controllers/userController';
 
 const app = express();
 const port = 3000;
 
-app.get('/', async (req, res) => {
-  res.send('hiiiiii');
-});
+app.use(bodyParser.json());
+app.use('/user', userRouter);
 
-app.listen(port, () => {
-  return console.log(`Express is listening at http://localhost:${port}`);
+app.listen(port, async () => {
+  await initServer();
+  return console.log('server initialized');
 });
