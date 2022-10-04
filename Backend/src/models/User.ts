@@ -1,15 +1,16 @@
 import {v4 as uuid} from 'uuid';
+import mongoose, { Schema, Document } from 'mongoose';
 
-export class User {
-    id: string;
+const userSchema = new Schema({
+    name: String,
+    status: String,
+    image: String
+});
+
+export interface IUser extends Document {
     name: string;
     status: string;
     image: string;
+};
 
-    constructor(name: string, status: string, image: string, id? : string) {
-        this.id = id || uuid();
-        this.name = name;
-        this.status = status;
-        this.image = image;
-    }
-}
+export const User = mongoose.model<IUser>('User', userSchema);
