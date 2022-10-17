@@ -1,0 +1,29 @@
+.chat-message-overview {
+    display: flex;
+    flex-direction: column;
+
+    height: 40px;
+    width: 400px;
+}
+
+.chat-message-overview-date {
+    display: flex;
+    align-self: end;
+}
+
+.chat-message-overview-content {
+    display: flex;
+    align-items: center;
+}
+
+.chat-message-overview-sender {
+    margin-right: 5px;
+}
+
+.chat-message-overview-not-read {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--green);
+    background: var(--green);
+}
