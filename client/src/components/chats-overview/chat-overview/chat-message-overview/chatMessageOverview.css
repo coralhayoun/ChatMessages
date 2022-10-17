@@ -1,9 +1,8 @@
 .chat-message-overview {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    height: 40px;
-    width: 400px;
+    width: 500px;
 }
 
 .chat-message-overview-date {
@@ -14,6 +13,8 @@
 .chat-message-overview-content {
     display: flex;
     align-items: center;
+
+    width: 375px;
 }
 
 .chat-message-overview-sender {
@@ -26,4 +27,5 @@
     height: 10px;
     border: 1px solid var(--green);
     background: var(--green);
+    margin-left: 10px;
 }

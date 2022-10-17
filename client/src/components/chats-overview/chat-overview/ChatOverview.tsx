@@ -1,6 +1,6 @@
 import './chatOverview.css';
-import { ChatOverview as chatOverview} from '../../models/chat/chat-overview/ChatOverview';
-import { ChatMessageOverview } from './message-overview/MessageOverview';
+import { ChatOverview as chatOverview} from '../../../models/chat/chat-overview/ChatOverview';
+import { ChatMessageOverview } from './chat-message-overview/ChatMessageOverview';
 
 export function ChatOverview({name, image, lastMessage}:chatOverview) {
     return (
