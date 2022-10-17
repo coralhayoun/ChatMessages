@@ -1,14 +1,8 @@
 import './App.css';
-import {ChatsOverview} from './components/chats-overview/ChatsOverview';
-
-
-
+import { ChatMessagesApp } from './components/chatMessagesApp';
 
 function App() {
-  return (
-    <ChatsOverview/>
-  );
+  return <ChatMessagesApp />;
 }
 
 export default App;
-

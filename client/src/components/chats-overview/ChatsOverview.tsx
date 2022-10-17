@@ -1,17 +1,18 @@
 import { ChatOverview } from './chat-overview/ChatOverview';
-import {chatMocks} from './chatsMocks';
+import { ChatOverview as chatOverview } from '../../models/chat/chat-overview/ChatOverview';
 
-export function ChatsOverview() {
-    return (
-        <>
-          {chatMocks.map((item,idx) => (
-                <ChatOverview
-                  key={idx}
-                  name={item.name}
-                  image={item.image}
-                  lastMessage={item.lastMessage}
-                />
-          ))}
-      </>
-    );
+export function ChatsOverview(props: { chats: chatOverview[] }) {
+  return (
+    <div className='chats-overview'>
+      {props.chats.map((chat: chatOverview, idx: number) => (
+        <ChatOverview
+          key={idx}
+          id={chat.id}
+          name={chat.name}
+          image={chat.image}
+          lastMessage={chat.lastMessage}
+        />
+      ))}
+    </div>
+  );
 }

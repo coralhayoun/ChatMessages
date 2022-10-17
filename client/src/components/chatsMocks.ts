@@ -1,7 +1,8 @@
-import { ChatOverview } from "../../models/chat/chat-overview/ChatOverview";
+import { ChatOverview } from '../models/chat/chat-overview/ChatOverview';
 
 export const chatMocks :ChatOverview[] = [
     {
+      id:'1',
       name: 'corals chat',
       image: 'logo192.png',
       lastMessage: {
@@ -12,6 +13,7 @@ export const chatMocks :ChatOverview[] = [
       } 
     },
     {
+      id:'2',
       name: 'shachars chat',
       image: 'logo192.png',
       lastMessage: {
@@ -22,6 +24,7 @@ export const chatMocks :ChatOverview[] = [
       },
     },
     {
+      id:'3',
         name: 'omris chat',
         image: 'logo192.png',
         lastMessage: {
@@ -32,6 +35,7 @@ export const chatMocks :ChatOverview[] = [
         } 
       },
       {
+        id:'4',
         name: 'ilays chat',
         image: 'logo192.png',
         lastMessage: {
