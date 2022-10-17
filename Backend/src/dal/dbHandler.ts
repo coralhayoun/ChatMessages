@@ -1,6 +1,5 @@
 import mongoose, {Connection} from 'mongoose';
 import {dbConfig} from '../config/dbConfig';
-import { User } from '../models/User';
 
 export async function initializeDb() {
     await connect();

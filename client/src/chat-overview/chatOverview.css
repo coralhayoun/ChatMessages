@@ -1,0 +1,28 @@
+.chat-overview {
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 10px;
+}
+
+.chat-overview-image {
+    border: 0.5px solid;
+    border-color: var(--light-grey);
+    border-radius: 100%;
+
+    width: 60px;
+    height: 60px;
+}
+
+.chat-overview-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-left:20px;
+}
+
+.chat-overview-name {
+    font-weight: bold;
+    font-size: larger;
+}
